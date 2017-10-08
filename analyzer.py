@@ -16,4 +16,4 @@ for name, group in data_groups:
 quantile_df = p.DataFrame.from_dict(data=quantile_dict, orient='index')
 quantile_df.columns = ['time']
 quantile_df = quantile_df.sort_values(['time'], ascending=False)
-quantile_df.to_csv("result.csv", sep='\t')
+quantile_df.to_csv("result.csv", sep=';')
